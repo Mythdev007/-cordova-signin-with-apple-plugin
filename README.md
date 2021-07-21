@@ -1,0 +1,1 @@
+# -cordova-signin-with-apple-plugin
