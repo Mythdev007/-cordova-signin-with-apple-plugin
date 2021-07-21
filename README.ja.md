@@ -1,15 +1,15 @@
 # cordova-signin-with-apple-plugin
 
-Cordova plugin to implement `Signin With Apple`.　　
+Signin With Appleを実装するためのcordovaプラグイン。　　
 
-The function logs in and verifies.  
+機能はログイン、検証を行う。  
 
 cordova >= 7.1.0  
 cordova-ios >= 4.5.0  
 xcode >= 11
 
 ```
-example)using swift5
+例)swift5を使用する場合
 config.xml  
 <platform name="ios">
   <preference name="UseSwiftLanguageVersion" value="5" />
@@ -31,7 +31,7 @@ cordova plugin add cordova-signin-with-apple-plugin
 
 ### Example
 
-ionic
+ionicでの使用例
 ```js
 angular.module('starter', ['ionic'])
   .run(function($ionicPlatform) {
@@ -80,10 +80,10 @@ angular.module('starter', ['ionic'])
 ```
 
 ### Error Code
-error callback returns an error of the form 　
+errorコールバックでは以下の形式のエラーを返します
 ```
 {
-  code: -1: Incorrect iOS version(< 13), -2:Invalid parameter, -3: authorization failed
-  description: Error message
+  code: -1: iOSバージョンが不正です(< 13), -2:パラメータが不正です, -3: 認証に失敗しました
+  description: エラーメッセージ
 }
 ```
